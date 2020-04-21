@@ -1,6 +1,3 @@
-/* font-family: "Public Sans", sans-serif;
-font-family: "Dosis", sans-serif; 
-font-family: 'Muli', sans-serif;*/
 * {
   margin: 0;
   padding: 0;
@@ -66,6 +63,13 @@ body {
   padding: 0;
 }
 img {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  width: 300px;
+  height: auto;
+}
+.quizApp img:hover {
   display: flex;
   flex-wrap: wrap;
   border-radius: 20px;
@@ -196,7 +200,7 @@ footer {
   margin-top: 25px;
   border-radius: 10px;
   width: 320px;
-  height: 320px;
+  height: fit-content;
   font-size: 18px;
   font-style: bold;
 }
@@ -210,7 +214,7 @@ footer {
   margin-top: 25px;
   border-radius: 10px;
   width: 320px;
-  height: 320px;
+  height: fit-content;
   font-size: 18px;
   font-style: bold;
 }
@@ -229,6 +233,18 @@ footer {
   height: fit-content;
   padding: 30px;
   border-radius: 20px;
+}
+.contactList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skillsList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .social {
   display: flex;
@@ -278,4 +294,616 @@ footer {
   margin-bottom: 20px;
   padding: 10px;
   line-height: 25px;
+}
+@media screen and (min-width: 600px) {
+  .headerButton:hover {
+    cursor: pointer;
+  }
+  .headerButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 900;
+    line-height: 65px;
+    width: 600px;
+    height: 223px;
+    border-radius: 20px;
+  }
+  h1 {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+  }
+  h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 900;
+    font-style: oblique;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Public Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: fit-content;
+  }
+  img {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+  }
+  p {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  a {
+  }
+  footer {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    height: 50px;
+    border-radius: 15px;
+    margin: 50px;
+  }
+  .navList {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    font-family: "Dosis", sans-serif;
+
+    font-weight: 600;
+  }
+  .navList li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+  }
+  .navList button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 180px;
+    border-radius: 10px;
+    font-weight: 900;
+    font-size: 24px;
+  }
+  .button:hover {
+    cursor: pointer;
+  }
+
+  .mainImg {
+    display: block;
+    /* transform: scale(0.5, 0.5); */
+    height: 600px;
+    width: auto;
+    object-fit: contain;
+  }
+  .mainImg img {
+    display: block;
+    height: 600px;
+    width: auto;
+    margin-top: 60px;
+  }
+  /* .navlist other{
+  } */
+  .biography {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    margin-top: 20px;
+  }
+  .bioPhoto img {
+    display: flex;
+    width: 450px;
+    height: auto;
+    object-fit: contain;
+  }
+  .bioContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    padding: 15px;
+    line-height: 25px;
+    margin: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 450px;
+  }
+  .bioContent img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: auto;
+    object-fit: contain;
+    margin: 10px;
+  }
+  .projectsPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    height: fit-content;
+    margin-top: 50px;
+  }
+  .quizApp {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    margin-top: 25px;
+    border-radius: 10px;
+    width: 400px;
+    height: fit-content;
+    font-size: 18px;
+    font-style: bold;
+    margin: 20px;
+  }
+  .quizApp img:hover {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    width: 300px;
+    height: auto;
+  }
+  .society {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    margin-top: 25px;
+    border-radius: 10px;
+    width: 400px;
+    height: fit-content;
+    font-size: 18px;
+    font-style: bold;
+    margin: 20px;
+  }
+  .society img {
+    display: flex;
+    width: 380px;
+    height: auto;
+    object-fit: contain;
+  }
+  .contactPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: fit-content;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 60px;
+  }
+  .contactList {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .skillsList {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .social_icon:hover {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 125px;
+  }
+  .social {
+    display: flex;
+    flex-direction: row;
+    margin: none;
+    position: static;
+    list-style: none;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .social li {
+    display: flex;
+    flex-direction: row;
+    margin: none;
+    position: static;
+    list-style: none;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .social_icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px;
+    font-size: 100px;
+  }
+  .social_icon:hover {
+    border-radius: 20px;
+  }
+  .projectsMain {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .skills {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 850px;
+    height: 95px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    line-height: 25px;
+  }
+  @media screen and (min-width: 1024px) {
+    .headerButton:hover {
+      cursor: pointer;
+    }
+    .headerButton {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      font-style: italic;
+      font-weight: 900;
+      line-height: 65px;
+      width: 600px;
+      height: 275px;
+      border-radius: 20px;
+    }
+    h1 {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    h2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+    }
+    h3 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      font-weight: 900;
+      font-style: oblique;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: "Public Sans", sans-serif;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: fit-content;
+    }
+    img {
+      display: flex;
+      flex-wrap: wrap;
+      border-radius: 20px;
+    }
+    p {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 10px;
+      flex-direction: column;
+      justify-content: center;
+    }
+    a {
+    }
+    footer {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    .navbar {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 800px;
+      height: 50px;
+      border-radius: 15px;
+      margin: 60px;
+      margin-bottom: 0px;
+    }
+    .navList {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      list-style: none;
+      font-family: "Dosis", sans-serif;
+      font-weight: 600;
+      width: 100%;
+    }
+    .navList li {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      width: 100%;
+    }
+    .navList button {
+      display: border-box;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      height: 80px;
+      width: 180px;
+      margin: 100px;
+      border-radius: 10px;
+      font-weight: 900;
+      font-size: 24px;
+      padding: 15px;
+    }
+    .navList button:hover {
+      border-radius: 50%;
+      cursor: pointer;
+      height: 120px;
+      width: 200px;
+      margin: 100px;
+    }
+    .button:hover {
+      cursor: pointer;
+    }
+
+    .mainImg {
+      display: block;
+      /* transform: scale(0.5, 0.5); */
+      height: 600px;
+      width: auto;
+      object-fit: contain;
+    }
+    .mainImg img {
+      display: block;
+      height: 600px;
+      width: auto;
+    }
+    /* .navlist other{
+    } */
+    .biography {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: fit-content;
+      margin: 0px;
+    }
+    .bioPhoto img {
+      display: none;
+      width: 300px;
+      height: auto;
+      object-fit: contain;
+    }
+    .bioContent {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+      border-radius: 20px;
+      padding: 15px;
+      line-height: 25px;
+      margin: 40px;
+      margin-top: 50px;
+      margin-bottom: 5px;
+      width: 450px;
+    }
+    .bioContent img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 400px;
+      height: auto;
+      object-fit: contain;
+      margin: 10px;
+    }
+    .projectsPage {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 00px;
+      height: fit-content;
+    }
+
+    .quizApp {
+      display: flex;
+      padding: 10px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      border-radius: 10px;
+      margin-top: 25px;
+      border-radius: 10px;
+      width: 400px;
+      height: fit-content;
+      font-size: 18px;
+      font-style: bold;
+      margin: 20px;
+      margin-left: 100px;
+      margin-left: 100px;
+    }
+    .quizApp img:hover {
+      display: flex;
+      flex-wrap: wrap;
+      border-radius: 20px;
+      width: 300px;
+      height: auto;
+    }
+    .society {
+      display: flex;
+      padding: 10px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      border-radius: 10px;
+      margin-top: 25px;
+      border-radius: 10px;
+      width: 400px;
+      height: fit-content;
+      font-size: 18px;
+      font-style: bold;
+      margin: 20px;
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+    .society img {
+      display: flex;
+      width: 380px;
+      height: auto;
+      object-fit: contain;
+    }
+    .society img:hover {
+      display: flex;
+      width: 380px;
+      height: auto;
+      object-fit: contain;
+    }
+    .contactPage {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 600px;
+      height: fit-content;
+      padding: 30px;
+      border-radius: 20px;
+    }
+    .contactList {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+      height: fit-content;
+    }
+    .social_icon:hover {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      font-size: 125px;
+    }
+    .social {
+      display: flex;
+      flex-direction: row;
+      margin: none;
+      position: static;
+      list-style: none;
+      width: 100%;
+      justify-content: space-around;
+    }
+    .social li {
+      display: flex;
+      flex-direction: row;
+      margin: none;
+      position: static;
+      list-style: none;
+      width: 100%;
+      justify-content: space-around;
+    }
+    .social_icon {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      margin: 30px;
+      font-size: 100px;
+    }
+    .social_icon:hover {
+      border-radius: 20px;
+    }
+    .projectsMain {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+    }
+    .skills {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 1024px;
+      height: 95px;
+      border-radius: 20px;
+      margin-bottom: 0px;
+      padding: 10px;
+      line-height: 25px;
+      padding: 10px;
+    }
+  }
 }
